@@ -29,7 +29,7 @@ function Home() {
     const isBookmarked = bookmarks.some(
       (bookmark) => bookmark.title === data.title
     );
-    console.log(article1, articlesHidden);
+
     return article1 ? null : (
       <Article key={i} {...data} isBookmarked={isBookmarked} hideIcon={true} />
     );
